@@ -1,0 +1,598 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="信息,大脑," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="《大家看的设计书》的作者讲过这么故事：
+
+很多年前的一个圣诞节，我收到一份圣诞礼物，是一本关于如何认识各种树的书。那时我住在父母的家里，所以礼物都打开后，我决定出去走走，认一认邻居家的树。出去之前我读了书的一部分。其中提到的第一种树是约书亚树，只需要两个线索就能认出它。由于约书亚树相当怪异，所以看到书中它的照片时，我对自己说：“哦，北加利福尼亚绝对没有这种树。这种树太怪异了。如果我见过，肯定应该有">
+<meta property="og:type" content="article">
+<meta property="og:title" content="鸡尾酒效应与信息筛选">
+<meta property="og:url" content="http://zhuyaofeng.com/2014-12-16-鸡尾酒效应与信息筛选.html">
+<meta property="og:site_name" content="入侵大脑">
+<meta property="og:description" content="《大家看的设计书》的作者讲过这么故事：
+
+很多年前的一个圣诞节，我收到一份圣诞礼物，是一本关于如何认识各种树的书。那时我住在父母的家里，所以礼物都打开后，我决定出去走走，认一认邻居家的树。出去之前我读了书的一部分。其中提到的第一种树是约书亚树，只需要两个线索就能认出它。由于约书亚树相当怪异，所以看到书中它的照片时，我对自己说：“哦，北加利福尼亚绝对没有这种树。这种树太怪异了。如果我见过，肯定应该有">
+<meta property="og:updated_time" content="2016-04-13T05:28:06.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="鸡尾酒效应与信息筛选">
+<meta name="twitter:description" content="《大家看的设计书》的作者讲过这么故事：
+
+很多年前的一个圣诞节，我收到一份圣诞礼物，是一本关于如何认识各种树的书。那时我住在父母的家里，所以礼物都打开后，我决定出去走走，认一认邻居家的树。出去之前我读了书的一部分。其中提到的第一种树是约书亚树，只需要两个线索就能认出它。由于约书亚树相当怪异，所以看到书中它的照片时，我对自己说：“哦，北加利福尼亚绝对没有这种树。这种树太怪异了。如果我见过，肯定应该有">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 鸡尾酒效应与信息筛选 | 入侵大脑 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">入侵大脑</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                鸡尾酒效应与信息筛选
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2014-12-16T20:41:00+08:00" content="2014-12-16">
+              2014-12-16
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>《大家看的设计书》的作者讲过这么故事：</p>
+<blockquote>
+<p>很多年前的一个圣诞节，我收到一份圣诞礼物，是一本关于如何认识各种树的书。那时我住在父母的家里，所以礼物都打开后，我决定出去走走，认一认邻居家的树。出去之前我读了书的一部分。其中提到的第一种树是约书亚树，只需要两个线索就能认出它。由于约书亚树相当怪异，所以看到书中它的照片时，我对自己说：“哦，北加利福尼亚绝对没有这种树。这种树太怪异了。如果我见过，肯定应该有印象，可我以前从来没有见过。”<br>之后我拿着这本书走出去。我的父母住在一个小巷子里，这里共有6家住户。其中4家的前院都赫然立着约书亚树。我住在那里已经有13年了，而我从来没有注意过约书亚树。我在这个街区转了转，发现似乎每一家不知新居时苗圃里都有约书亚树卖，至少80%的住家前院都种有约书亚树。而我在此之前居然从来没有注意过！在我知道了这种树之后，我是说在我能够说出它的名字后，它就无处不在了。这正是我要说的：<strong>一旦能够说出什么东西的名字，就会很容易注意到它。你就会掌握它，拥有它，使它在你的控制中。</strong></p>
+</blockquote>
+<p>柯林奇瑞（Collin Cherry）把这个称为<strong>鸡尾酒会效应</strong>（cock-tail party effect），我们都可能有过这样的经历。在鸡尾酒会中，所有的人都在以差不多同样大小的声音三五成群地相互谈话。你正在与某个或者某些人交谈，在你们正在谈话的相当长一段时间里，除了与你交谈的人们所说的话以及你自己对那些人说的话之外，其他的声音事实上都被你忽略，等同于并不存在。但是，如果另外一群人的谈话中突然出现了你的名字，甚至可能在他们事实上离你并不是很近的情况下，你都会瞬间捕捉到那个声音，就好像它突然冲进了你的耳朵一样。而奇怪的是，之前的相当长一段时间里，那些人一直在以同样大小的音量，在与你现在同样的距离之外进行交谈，但是你却完全不知道他们在说些什么，那个声音在此之前的部分全部被过滤掉了。</p>
+<p>这就是今天我要讲的关于<code>信息筛选</code>的问题。我们会对我们已知的，或者是认识的事物有更好的筛选能力。当我们能够说出一样东西的名字，我们就能在更多情况下注意它。信息检索在很多时候我们并不知道关键词，一旦我们知道解决一个问题需要哪些关键词，键入Google或者百度就能得到我们需要的具体信息。也就是说关键在于关键词！</p>
+<p>有人说“语言决定了思想”，也同样是这个道理，一个人拥有的词汇限制了他的思考广度和深度。知道的越多，就越有可能<code>融会贯通</code>（关于这个主题后面继续讨论）。</p>
+<p>首先已知=有限，未知=无限，想要用有限去表示无限，那是不可能的，当人类接触到一个新概念的时候，我们会搜索已有的知识库去寻找关于它的所有线索，假如有类似的情况存在，就可以很方便的用已知去解释未知。比如说英国法律是基于Case的，电脑病毒和生物病毒的类比，软件架构和建筑的类比，我们总是趋向于去类比，因为这样能更好的去理解未知东西，当然一些类比是相当成功的，如病毒等。</p>
+<p>类比带来的好处有：</p>
+<ol>
+<li>从对于已知的各个方面的研究去探知未知事物的相关方面的特性，可以大胆的假设一些并未被观察到的现象。这个可以称之为<code>规律</code>or<code>道</code>。门捷列夫发明元素周期表的故事就是一个很好的例子。</li>
+<li>由于人类的联想特性，已知的概念会和当前其他的一些概念有所联系，当新概念用先前的概念去类比的时候，同样可以与那些概念产生联系，从而有可能衍生出新的联系。</li>
+</ol>
+<p>但是类比同样也会带来问题：</p>
+<ol>
+<li>思维将会受旧有概念的<code>限制</code>。</li>
+<li>新概念毕竟不是旧概念，两者之间虽有相似之处，但也有不同之处，用旧有观念可能将思路引入歧途。</li>
+</ol>
+
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/信息/" rel="tag">#信息</a>
+          
+            <a href="/tags/大脑/" rel="tag">#大脑</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2014-11-16-svn定时自动更新.html" rel="next" title="svn定时自动更新">
+                <i class="fa fa-chevron-left"></i> svn定时自动更新
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016-02-16-从alphago的进步借鉴学习新技能的过程.html" rel="prev" title="从alphago的进步借鉴学习新技能的过程">
+                从alphago的进步借鉴学习新技能的过程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar2016.jpg"
+               alt="朱耀锋" />
+          <p class="site-author-name" itemprop="name">朱耀锋</p>
+          <p class="site-description motion-element" itemprop="description">a system view on reality</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">朱耀锋</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
